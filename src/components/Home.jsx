@@ -6,7 +6,7 @@ export default function Home() {
   const [login, setLogin] = useAtom(isLogin);
   return (
     <div>
-      { login ? "로그인이 되었습니다" : <Login />}
+      { login ? "로그인이 되었습니다☺️" : <Login />}
     </div>
   )
 }
