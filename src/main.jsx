@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
+  // 배포할땐 strincmode빼고
   <StrictMode>
     <App />
   </StrictMode>,

@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+/* 모든페이지에 영향 */
 body {
   margin: 0;
   padding: 0;
