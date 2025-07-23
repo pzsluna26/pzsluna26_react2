@@ -42,6 +42,7 @@ export default function Login() {
     //개발자도구>어플리케이션.로컬스토리지>기록됨
     localStorage.setItem("id", emailRef.current.value);
     setLogin(true);
+    
   }
 
   return (

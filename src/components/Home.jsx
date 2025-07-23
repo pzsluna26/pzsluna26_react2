@@ -6,7 +6,7 @@ export default function Home() {
   const [login, setLogin] = useAtom(isLogin);
   const id = localStorage.getItem("id");
   return (
-    <div className="w-full">
+    <div>
       { 
         login ? (
           <div className="mt-50">{id} 님 로그인이 되었습니다☺️</div>
