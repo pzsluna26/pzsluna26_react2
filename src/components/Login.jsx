@@ -9,6 +9,7 @@ export default function Login() {
   const pwdRef = useRef();
 
   const handleLogin = (e) => {
+    // form submit 페이지 초기화 방지
     e.preventDefault();
     if (emailRef.current.value == "") {
       alert("이메일을 입력하세요.");

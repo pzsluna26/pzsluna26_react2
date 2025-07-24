@@ -1,5 +1,6 @@
-import TailSelect from "./TailSelect"
-import SubwayBox from "./SubwayBox" 
+import TailSelect from "./TailSelect" 
+// import SubwayBox from "./SubwayBox" 
+import SubwayBox2 from "./SubwayBox2" 
 import { useRef, useState, useEffect } from "react"
 
 
@@ -8,7 +9,7 @@ import serea from '../db/sarea.json'
 export default function Subway() {
   const sel = useRef();
   const [selectedCode, setSelectedCode] = useState(""); 
-  const [tdata, setTdata] = useState(null);
+  const [tdata, setTdata] = useState([]);
 
   const handleSel = () => {
     const code = sel.current.value;
@@ -25,10 +26,12 @@ export default function Subway() {
     try {
       const resp = await fetch(url);
       const data = await resp.json();
-      setTdata(data.response.body.items.item[0]);
+      // 한개데이터만 넘김
+      // setTdata(data.response.body.items.item[0]);
+      setTdata(data.response.body.items.item);
     } catch (error) {
       console.error("데이터 패치 에러:", error);
-      setTdata(null);
+      setTdata([]);
     }
   };
 
@@ -53,11 +56,17 @@ export default function Subway() {
       </div>
 
       <div>
-        {tdata ? (
-          <SubwayBox item={tdata} /> 
-        ) : (
-          <p className="text-gray-500">측정소를 선택하면 결과가 나타납니다.</p>
-        )}
+        {/* {tdata.length > 0 ? (
+                            <SubwayBox2 items={tdata} />
+          ) : (
+        <p className="text-gray-500">측정소를 선택하면 결과가 나타납니다.</p>
+)} */}
+{Array.isArray(tdata) && tdata.length > 0 ? (
+  <SubwayBox2 items={tdata} />
+) : (
+  <p className="text-gray-500">측정소를 선택하면 결과가 나타납니다.</p>
+)}
+
       </div>
     </div>
   );

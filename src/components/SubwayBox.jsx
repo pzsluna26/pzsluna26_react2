@@ -1,3 +1,4 @@
+// 테이블 하나 출력되는 subwaybox
 // 측정값(item)을 받아와서, 항목 이름과 단위(scode.json 참조)와 함께 테이블로 표시
 // 1. scode 불러오기
 import scode from '../db/scode.json'
