@@ -1,9 +1,9 @@
-// 테이블 12개 출력되는 subwaybox
+// 테이블 12개 출력되는 subwaybox2
 
 import scode from '../db/scode.json'
 export default function SubwayBox2({ items }) {
   const keys = Object.keys(scode);
-
+  
   return (
     <div className="overflow-x-auto">
       <table className="border border-gray-400 w-full text-center">

@@ -38,7 +38,7 @@ export default function Nav() {
                 login && <Link to = "/Subway">
                 <li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">지하철 대기정보</li></Link>
               }
-
+              
             </ul>
           </div>
           <div className="mr-10 text-xs font-bold p-4 bg-blue-300 text-white rounded-xl">
