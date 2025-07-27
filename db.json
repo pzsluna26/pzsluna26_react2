@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "author": "John Doe"
+    },
+    {
+      "id": 2,
+      "title": "JSON Server",
+      "author": "Jane Doe"
+    },
+    {
+      "id": "8933",
+      "title": "안녕안녕",
+      "author": "안녕안녕"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "body": "Nice post!"
+    },
+    {
+      "id": 2,
+      "postId": 2,
+      "body": "Very useful!"
+    }
+  ],
+  "profile": {
+    "name": "John Doe"
+  }
+}

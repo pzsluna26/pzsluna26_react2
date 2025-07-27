@@ -5,7 +5,8 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Home from './components/Home'
 import Login from './components/Login'
 import Subway from './components/Subway'
-import Rest from './Rest'
+import Rest from './components/Rest'
+
 
 function App() {
   return (

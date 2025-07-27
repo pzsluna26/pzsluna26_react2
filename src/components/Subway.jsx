@@ -1,4 +1,4 @@
-import TailSelect from "./TailSelect" 
+import TailSelect from "../ui/TailSelect" 
 import SubwayBox3 from "./SubwayBox3"
 // import SubwayBox from "./SubwayBox" 
 // import SubwayBox2 from "./SubwayBox2" 
