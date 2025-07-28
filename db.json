@@ -1,34 +1,39 @@
 {
-  "posts": [
+  "todos": [
     {
-      "id": 1,
-      "title": "Hello World",
-      "author": "John Doe"
+      "id": "3d94",
+      "text": "dd",
+      "completed": "O"
     },
     {
-      "id": 2,
-      "title": "JSON Server",
-      "author": "Jane Doe"
+      "id": "9175",
+      "text": "d",
+      "completed": "X"
     },
     {
-      "id": "8933",
-      "title": "안녕안녕",
-      "author": "안녕안녕"
+      "id": "0975",
+      "text": "ㅇㄹㄴㅇ",
+      "completed": "X"
+    },
+    {
+      "id": "ce99",
+      "text": "ㅇㄹㄴㅇㄹ",
+      "completed": "X"
+    },
+    {
+      "id": "63b8",
+      "text": "ㄴㅇㄹㄹ",
+      "completed": "O"
+    },
+    {
+      "id": "8068",
+      "text": "ㄴㅇㄹㄴㅇㄹ",
+      "completed": "X"
+    },
+    {
+      "id": "6b19",
+      "text": "ㅀㅇㄴ",
+      "completed": "X"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "postId": 1,
-      "body": "Nice post!"
-    },
-    {
-      "id": 2,
-      "postId": 2,
-      "body": "Very useful!"
-    }
-  ],
-  "profile": {
-    "name": "John Doe"
-  }
+  ]
 }

@@ -11,11 +11,13 @@ import {isLogin} from "../atoms/IsLoginAtom"
 
 
 export default function Nav() {
+ 
   //초기값 = false = 로그아웃
   //useAtom 괄호안 '객체' 들어가야함
   const [login, setLogin] = useAtom(isLogin);
 
   const handleLogout = () => {
+    
     setLogin(false);
     //로컬스토리지에서 없어짐
     localStorage.removeItem("id");
@@ -31,13 +33,14 @@ export default function Nav() {
           </div>
           <div className="text-gray-500 font-bold text-xs">
             <ul className="flex justify-center items-center">
-              <Link to = "/Home"><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">홈으로</li></Link>
+              <li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black"><Link to = "/Home">홈으로</Link></li>
               
               {/* 자바스크립트 && 연산자 = 왼쪽이 true 일때 오른쪽이 실행됨 */}
               { 
-                login && <Link to = "/Subway">
-                <li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">지하철 대기정보</li></Link>
+                login && 
+                <li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black"><Link to = "/Subway">지하철 대기정보</Link></li>
               }
+              <li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black"><Link to = "/TodoList">할일목록</Link></li>
               
             </ul>
           </div>
