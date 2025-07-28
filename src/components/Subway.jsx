@@ -27,7 +27,7 @@ export default function Subway() {
     setSelectedCode(code); 
   };
 
-  const getDataFetch = async (code) => { 
+  const getDataFatch = async (code) => { 
     
     const apikey = import.meta.env.VITE_DATA_API;
     const today = new Date().toISOString().slice(0,10).replaceAll("-",""); 
@@ -42,7 +42,7 @@ export default function Subway() {
       // 한개데이터만 넘김
       // setTdata(data.response.body.items.item[0]);
       setTdata(data.response.body.items.item);
-      console.log("📦 받아온 원본 데이터:", data.response.body.items.item );
+      console.log("받아온 원본 데이터:", data.response.body.items.item );
     } catch (error) {
       console.error("데이터 패치 에러:", error);
       setTdata([]);
@@ -51,7 +51,7 @@ export default function Subway() {
 
  useEffect(() => {
   if (selectedCode) {
-    getDataFetch(selectedCode);
+    getDataFatch(selectedCode);
   }
   }, [selectedCode]);
 

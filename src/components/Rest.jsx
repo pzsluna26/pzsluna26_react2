@@ -9,7 +9,7 @@ export default function Rest() {
   const titleR = useRef();
   const authorR = useRef();
   
-  const getDataFetch = async () => {
+  const getDataFatch = async () => {
     console.log(baseUrl)
 
     //axios 패치
@@ -20,7 +20,7 @@ export default function Rest() {
   }
 
   useEffect(()=>{
-    getDataFetch();
+    getDataFatch();
   },[])
 
   const handleInput = async (e) => {
@@ -36,7 +36,7 @@ export default function Rest() {
     // axios 추가
     await axios.post(baseUrl, postData); 
     // 저장 후 다시 fetch + 정렬
-    await getDataFetch();  
+    await getDataFatch();  
     titleR.current.value="";
     authorR.current.value="";
    
@@ -50,7 +50,7 @@ export default function Rest() {
     // axios 삭제
     await axios.delete(`${baseUrl}/${id}`); 
     // 삭제 후 다시 fetch + 정렬
-    await getDataFetch();  
+    await getDataFatch();  
   }
 
  

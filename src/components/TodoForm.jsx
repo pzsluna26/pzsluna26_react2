@@ -46,12 +46,13 @@ export default function TodoForm({addTodo}) {
           <p className='font-bold ml-5 mr-10'>TODO</p>
           <TailSelect2 selRef = {selR}
                        dText = "-----"
+                       id="sel1"
                       >
 
             <option value="X">X</option>
             <option value="O">O</option>
           </TailSelect2>
-          <input type ="text" 
+          <input type ="text" id="txt1"
                  ref = {txtR}
                  className="underline w-[300px] h-[35px] mr-10"/>
           <TailButton caption = "확인"
@@ -66,3 +67,5 @@ export default function TodoForm({addTodo}) {
     </div>
   )
 }
+
+// 새로고침 문제 : 크롬 → F12 → Network 탭 → 상단 체크박스 "Preserve log" 를 켜두면솔/네트워크 로그가 새로고침돼도 유지됨

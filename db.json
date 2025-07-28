@@ -1,38 +1,23 @@
 {
   "todos": [
     {
-      "id": "3d94",
-      "text": "dd",
+      "id": "fe37",
+      "text": "할일할일",
+      "completed": "X"
+    },
+    {
+      "id": "6f33",
+      "text": "할일을 하자",
       "completed": "O"
     },
     {
-      "id": "9175",
-      "text": "d",
+      "id": "c207",
+      "text": "ㅇㄹㅇㄴ",
       "completed": "X"
     },
     {
-      "id": "0975",
-      "text": "ㅇㄹㄴㅇ",
-      "completed": "X"
-    },
-    {
-      "id": "ce99",
+      "id": "c5d7",
       "text": "ㅇㄹㄴㅇㄹ",
-      "completed": "X"
-    },
-    {
-      "id": "63b8",
-      "text": "ㄴㅇㄹㄹ",
-      "completed": "O"
-    },
-    {
-      "id": "8068",
-      "text": "ㄴㅇㄹㄴㅇㄹ",
-      "completed": "X"
-    },
-    {
-      "id": "6b19",
-      "text": "ㅀㅇㄴ",
       "completed": "X"
     }
   ]
