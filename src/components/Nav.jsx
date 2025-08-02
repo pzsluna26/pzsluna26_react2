@@ -41,7 +41,6 @@ export default function Nav() {
                 <li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black"><Link to = "/Subway">지하철 대기정보</Link></li>
               }
               <li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black"><Link to = "/TodoList">할일목록</Link></li>
-              
             </ul>
           </div>
           <div className="mr-10 text-xs font-bold p-4 bg-blue-300 text-white rounded-xl">

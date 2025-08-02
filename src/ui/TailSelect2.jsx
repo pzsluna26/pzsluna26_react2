@@ -1,6 +1,6 @@
                 
 
-export default function TailSelect({ selRef, dText, children }) {
+export default function TailSelect2({ selRef, dText, children }) {
   return (
     <>
       <select className="bg-gray-50 border mx-2 border-gray-300 text-gray-900

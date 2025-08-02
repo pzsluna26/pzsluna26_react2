@@ -68,4 +68,6 @@ export default function TodoForm({addTodo}) {
   )
 }
 
+
+// 인풋창에서 밑줄 생기는거 해결하기
 // 새로고침 문제 : 크롬 → F12 → Network 탭 → 상단 체크박스 "Preserve log" 를 켜두면솔/네트워크 로그가 새로고침돼도 유지됨
